@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- 이미지로딩 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- 테일윈드 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.4/tailwind.min.css">
+
+  <!-- gsap -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+
+  <!--AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- font -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+</head>
+
+<body>
+  <!--font-->
+  <style>
+    html,
+    html>body {
+      font-family: 'Pretendard', sans-serif;
+    }
+  </style>
+
+
+  <div id="cursor" class="cursor"></div>
+
+  <header class="top-bar">
+    <div class="con con-top-bar">
+      <div class="top-bar__logo">
+        <a href="./weave-main.html">
+          <span>W</span>
+        </a>
+      </div>
+
+      <div class="top-bar__menu">
+        <div class="top-bar__menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <div class="side-bar">
+    <div class="top-bar side__top-bar">
+      <div class="con con-top-bar side__con-top-bar">
+        <div class="top-bar__logo">
+          <a href="./weave-main.html"><span>W</span></a>
+        </div>
+        <div class="top-bar__login">
+          <a href="./weave-login.html" class="login-btn">
+            <span>LOGIN</span>
+          </a>
+        </div>
+        <div class="top-bar__right">
+          <div class="lang">
+            <ul>
+              <li class="ko"><a href="#" title="준비중입니다.">KO</a></li>
+              <li class="line line-box">
+                <div class="line"></div>
+              </li>
+              <li class="en"><a href="#" title="준비중입니다.">EN</a></li>
+            </ul>
+          </div>
+          <div class="close-btn-wrap" role="button">
+            <div class="close-btn" id="closeBtn"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sec sec-side-bar">
+      <div class="con con-side-bar con-1">
+        <nav class="main-menu">
+          <ul class="main-menu__item-list">
+            <li>
+              <span>01</span><a href="./weave-main.html">기업소개</a>
+            </li>
+            <li>
+              <span>02</span><a href="./weave-service.html">서비스</a>
+            </li>
+            <li>
+              <span>03</span><a href="#" title="준비중입니다.">멤버십</a>
+            </li>
+            <li>
+              <span>04</span><a href="#" title="준비중입니다.">브랜드아이덴티티</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="side-bar__bottom">
+      <div class="con">
+        <div class="bottom-contact">
+          <ul>
+            <li><a href="#" target="_blank" title="준비중입니다.">개인정보처리방침</a></li>
+            <li><span>|</span></li>
+            <li><a href="#" target="_blank" title="준비중입니다.">IR공고</a></li>
+            <li><span>|</span></li>
+            <li><a href="#" target="_blank" title="준비중입니다.">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="bottom-copyright">
+          <span>Copyright © 2025 WEAVE. All rights reserved</span>
+        </div>
+        <div class="bottom-familysite">
+          <div class="familysite__btn-box">
+            <a href="#" title="준비중입니다.">
+              <div class="familysite__btn-txt"><span>FAMILY SITE</span></div>
+              <div><span>∨</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ScrollSmoother-wrapper">
+    <div id="smooth-content">
+      <div id="main-content">
+
+        <main class="main-sections">
+          <section class="sec sec-1">
+            <div class="con con-1">
+              <div class="con-1-grow"></div>
+              <div class="back-txt">
+                <div>
+                  <span>CONNECT US →</span>
+                  <span>CONNECT US →</span>
+                  <span>CONNECT US →</span>
+                  <span>CONNECT US →</span>
+                  <span>CONNECT US →</span>
+                  <span>CONNECT US →</span>
+                  <span>CONNECT US →</span>
+                </div>
+                <div>
+                  <span>CONNECT US →</span>
+                  <span>CONNECT US →</span>
+                  <span>CONNECT US →</span>
+                  <span>CONNECT US →</span>
+                  <span>CONNECT US →</span>
+                  <span>CONNECT US →</span>
+                  <span>CONNECT US →</span>
+                </div>
+              </div>
+              <div class="main-img">
+                <img src="./img/iPhone Mockup 15 1.png" alt="">
+              </div>
+              <div class="bottom-txt">
+                Connection isn’t a feature. It’s the heart of everything.
+                <br>
+                Your everyday moments become bridges to something deeper.
+              </div>
+            </div>
+          </section>
+
+          <section class="sec sec-2">
+            <div class="con con-2">
+              <div class="con-2__top" data-aos="fade-up" data-aos-delay="300">
+                <span>진심을 담으면</span>
+                <br>
+                <span>달라질 수 있다는 믿음,</span>
+                <br>
+                <span><span class="txt-blue">Weave가 존재하는 이유</span>입니다.</span>
+              </div>
+
+              <div class="con-2__bottom">
+                <div class="bottom__left-arrow" data-aos="fade-up" data-aos-delay="500">
+                  <span>Weave</span>
+                  <span>↓</span>
+                </div>
+                <div class="bottom__right-txt" data-aos="fade-up" data-aos-delay="600">
+                  <span>기술과 감성이 만나는 접점, Weave에서 시작됩니다.</span>
+                  <div>
+                    우리는 점점 단절되어 가는 세상 속에서, 어떻게 하면 사람들과
+                    <br>
+                    더 따뜻하게 연결될 수 있을까요?
+                    <br>
+                    <br>
+                    Weave는 그 해답을 ‘소통’과 ‘관계’에서 찾고자 합니다.
+                    <br>
+                    <br>
+                    진심 어린 마음이 오가는 작은 연결이 모이면, 결국 더 나은 사회를 만들 수 있다고 믿습니다.
+                    <br>
+                    그래서 Weave는 사람과 사람 사이에 자연스럽고 깊이 있는 관계가 이어질 수 있도록
+                    <br>
+                    돕는 공간을 만들어가려 합니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="sec sec-3">
+            <div class="con con-3">
+              <div class="con-3__txt" data-aos="fade-up" data-aos-once="true">
+                <span>위브의 주요 기능을 소개합니다.</span>
+              </div>
+              <div class="con-3__items-wrap">
+                <div class="con-3__item con-3__item-1">
+                  <div class="con-3__item-name" data-aos="fade-up" data-aos-once="true">
+                    <span>위브톡</span>
+                  </div>
+                  <div class="con-3__item-content">
+                    <div class="con-3__item-content-txt">
+                      <div class="content-title" data-aos="fade-up" data-aos-once="true">
+                        <span>구분된 공간으로</span>
+                        <span>깔끔하게 소통해요</span>
+                      </div>
+                      <div class="content-grow"></div>
+                      <div class="content-sub" data-aos="fade-up" data-aos-once="true">
+                        <span>혼동은 적게,</span>
+                        <span>소통은 명확하게,</span>
+                      </div>
+                      <div class="content-txt" data-aos="fade-up" data-aos-once="true">
+                        위브톡에 내가 원하는 모임들을 등록해 보세요.
+                        <br>
+                        공적인 대화부터 사적인 대화까지 한눈에 관리 할 수 있어요.
+                        <br>
+                        다양한 주제별 대화방을 손쉽게 만들고 분리할 수 있어,
+                        <br>
+                        복잡한 소통도 명확하게 정리해줘요.
+                      </div>
+                    </div>
+                    <div class="con-3__item-content-img" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
+                      <img src="./img/phone.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="con-3__item con-3__item-2">
+                  <div class="con-3__item-name" data-aos="fade-up" data-aos-once="true">
+                    <span>위브 캘린더</span>
+                  </div>
+                  <div class="con-3__item-content">
+                    <div class="con-3__item-content-img" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
+                      <img src="./img/phone.png" alt="">
+                    </div>
+                    <div class="con-3__item-content-txt">
+                      <div class="content-title" data-aos="fade-up" data-aos-once="true">
+                        <span>일정부터 약속까지</span>
+                        <span>하나로 관리해요</span>
+                      </div>
+                      <div class="content-grow"></div>
+                      <div class="content-sub" data-aos="fade-up" data-aos-once="true">
+                        <span>일정은 간편하게,</span>
+                        <span>알림은 정확하게,</span>
+                      </div>
+                      <div class="content-txt" data-aos="fade-up" data-aos-once="true">
+                        위브캘린더는 만남 속 다양한 일정을 한번에 관리해줘요.
+                        <br>
+                        약속, 회의, 모임까지 모든 일정을 한눈에 확인하고,
+                        <br>
+                        중요한 순간은 정확한 알림으로 절대 놓치지 않도록 도와줘요.
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="con-3__item con-3__item-3">
+                  <div class="con-3__item-name" data-aos="fade-up" data-aos-once="true">
+                    <span>위브 페이</span>
+                  </div>
+                  <div class="con-3__item-content">
+                    <div class="con-3__item-content-txt">
+                      <div class="content-title" data-aos="fade-up" data-aos-once="true">
+                        <span>민감한 정산</span>
+                        <span>편리하게 끝내요</span>
+                      </div>
+                      <div class="content-grow"></div>
+                      <div class="content-sub" data-aos="fade-up" data-aos-once="true">
+                        <span>부담은 적게,</span>
+                        <span>계산은 확실하게,</span>
+                      </div>
+                      <div class="content-txt" data-aos="fade-up" data-aos-once="true">
+                        위브 페이는 송금 요청이 부담스러울 때,
+                        <br>
+                        모임이 끝나자마자 자동으로 정산을 시작해요.
+                        <br>
+                        번거롭지 않고, 정확하게 정산할 수 있어요.
+                      </div>
+                    </div>
+                    <div class="con-3__item-content-img" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
+                      <img src="./img/phone.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="con-3__item con-3__item-4">
+                  <div class="con-3__item-name" data-aos="fade-up" data-aos-once="true">
+                    <span>위브 아카이브</span>
+                  </div>
+                  <div class="con-3__item-content">
+                    <div class="con-3__item-content-img" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
+                      <img src="./img/phone.png" alt="">
+                    </div>
+                    <div class="con-3__item-content-txt">
+                      <div class="content-title" data-aos="fade-up" data-aos-once="true">
+                        <span>소중한 순간을</span>
+                        <span>함께 기억해요</span>
+                      </div>
+                      <div class="content-grow"></div>
+                      <div class="content-sub" data-aos="fade-up" data-aos-once="true">
+                        <span>사진은 생생하게,</span>
+                        <span>대화는 그대로 남게,</span>
+                      </div>
+                      <div class="content-txt" data-aos="fade-up" data-aos-once="true">
+                        위브 아카이브는 소중한 대화와 사진을
+                        <br>
+                        안전하게 백업하고, 복구할 수 있어요.
+                        <br>
+                        당신의 특별한 순간이 시간 속에 잊히지 않도록,
+                        <br>
+                        잊고 지낸 추억도 다시 꺼내볼 수 있도록 도와줄게요.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="sec scroll-section">
+            <div class="wrapper">
+              <div class="list">
+                <section class="item sec sec-4">
+                  <div class="con con-4">
+                    <div class="con-4__txt">
+                      <span>other features</span>
+                      <span>“서툴지만 진심 어린 연결이 관계를 바꿉니다.”</span>
+                    </div>
+                    <div class="con-4__roll-features">
+                      <div class="con-4__feature feature-1">DAILY SHARING<br>FEATURES</div>
+                      <div class="con-4__feature feature-2">MY AVATAR SETTINGS<br>FEATURES</div>
+                      <div class="con-4__feature feature-3">SHARE REAL-TIME LOCATION<br>WITH FRIENDS</div>
+                      <div class="con-4__feature feature-4">TO SEND A MESSAGE OF<br>SUPPORT ONCE A DAY</div>
+                      <div class="con-4__feature feature-5">CUSTOM STATUS MESSAGE<br>FEATURES</div>
+                      <div class="con-4__feature feature-6">MEMORY STORAGE<br>FEATURES</div>
+                      <div class="con-4__feature feature-7">VOICE DIARY<br>FEATURES</div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="item sec sec-5 cursor-white">
+                  <div class="con con-5">
+                    <div class="con-5__boxs con-5__title">
+                      <div class="title-main">
+                        Say hello
+                      </div>
+                      <div class="title-sub">
+                        ABOUT, WEAVE
+                      </div>
+                    </div>
+                    <div class="con-5__boxs con-5__txt">
+                      <div>
+                        At WEAVE, we believe that genuine communication is the thread that connects us all.
+                        In a world where interactions often feel fleeting or transactional, we’re committed to fostering moments of honesty, care, and real emotional connection.
+                        Through simple yet lasting connections, we help people build meaningful relationships and create a more connected, compassionate world.
+                      </div>
+                      <div>
+                        More than a membership. A way to belong.
+                        <br>
+                        WEAVE creates space for small gestures to spark meaningful bonds.
+                        <br>
+                        <br>
+                        With WEAVE, your everyday moments become bridges to something deeper.
+                      </div>
+                      <div>
+                        Connection isn’t a feature. It’s the heart of everything.With WEAVE, your everyday moments become bridges to something deeper.
+                      </div>
+                    </div>
+                    <div class="con-5__boxs con-5__bottom">
+                      <div class="bottom__weave-plus">
+                        <svg width="263" height="263" viewBox="0 0 263 263" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M131.496 0.00292969C58.8728 0.00300391 0 58.8757 0 131.499C0 131.821 0.00354004 132.143 0.00585938 132.464H0.00292969V263H130.539V262.988C130.858 262.991 131.177 262.995 131.496 262.995C204.119 262.995 262.992 204.122 262.992 131.499C262.992 58.8757 204.119 0.00292969 131.496 0.00292969Z"
+                            fill="white" />
+                          <path
+                            d="M58.9198 126.003L51.7062 98.6116H60.2313L64.0651 116.318H64.2669L68.3529 98.6116H76.6762L80.8631 116.217H81.0649L84.7473 98.6116H93.3229L86.1093 126.003H77.0293L72.6911 109.76H72.338L67.9998 126.003H58.9198ZM108.91 126.507C100.335 126.507 95.0884 121.16 95.0884 112.433C95.0884 103.959 100.385 98.2585 108.608 98.2585C116.275 98.2585 121.824 103.152 121.824 112.232V114.401H103.462V114.552C103.462 118.083 105.631 120.353 109.062 120.353C111.382 120.353 113.097 119.344 113.803 117.73H121.723C120.714 123.077 116.023 126.507 108.91 126.507ZM103.462 109.407H113.904C113.854 106.481 111.735 104.413 108.809 104.413C105.783 104.413 103.588 106.557 103.462 109.407ZM124.952 118.386C124.952 112.332 129.643 110.163 135.091 109.81C137.058 109.684 140.488 109.558 141.649 109.508V107.288C141.649 105.371 140.236 104.312 137.916 104.312C135.646 104.312 134.233 105.27 133.88 107.086H125.96C126.314 102.244 130.45 98.2585 138.118 98.2585C144.877 98.2585 150.174 101.487 150.174 107.389V126.003H142.153V122.169H141.951C140.438 124.944 137.815 126.507 133.981 126.507C128.735 126.507 124.952 123.834 124.952 118.386ZM133.023 118.033C133.023 119.899 134.486 120.858 136.554 120.858C139.429 120.858 141.75 118.991 141.699 116.267V114.502C140.665 114.552 137.764 114.678 136.503 114.804C134.385 115.056 133.023 116.217 133.023 118.033ZM180.743 98.6116L171.31 126.003H161.574L152.192 98.6116H161.12L166.316 117.629H166.619L171.764 98.6116H180.743ZM195.876 126.507C187.301 126.507 182.055 121.16 182.055 112.433C182.055 103.959 187.351 98.2585 195.574 98.2585C203.241 98.2585 208.79 103.152 208.79 112.232V114.401H190.428V114.552C190.428 118.083 192.598 120.353 196.028 120.353C198.348 120.353 200.063 119.344 200.77 117.73H208.689C207.68 123.077 202.989 126.507 195.876 126.507ZM190.428 109.407H200.87C200.82 106.481 198.701 104.413 195.776 104.413C192.749 104.413 190.555 106.557 190.428 109.407ZM53.724 184.294V146.612H62.1482V151.303H62.4509C63.4598 148.831 65.8307 146.258 70.1689 146.258C75.97 146.258 81.1153 150.698 81.1153 160.332C81.1153 169.614 76.2222 174.406 70.1689 174.406C65.9316 174.406 63.5102 172.036 62.4509 169.564H62.2491V184.294H53.724ZM62.0473 160.282C62.0473 164.822 63.9642 167.748 67.2431 167.748C70.5724 167.748 72.3884 164.822 72.3884 160.282C72.3884 155.843 70.5724 152.917 67.2431 152.917C63.9642 152.917 62.0473 155.742 62.0473 160.282ZM94.13 137.481V174.003H85.6049V137.481H94.13ZM117.234 162.199V146.612H125.708V174.003H117.637V168.958H117.334C116.124 172.237 113.097 174.356 108.961 174.356C103.361 174.356 99.578 170.32 99.578 164.065V146.612H108.103V162.451C108.103 165.427 109.768 167.294 112.492 167.294C115.115 167.294 117.234 165.478 117.234 162.199ZM146.996 155.086C146.744 153.27 145.129 152.11 142.859 152.11C140.741 152.11 139.076 153.068 139.126 154.481C139.076 155.54 139.883 156.398 142.254 156.852L147.45 157.861C152.898 158.92 155.521 161.291 155.571 165.276C155.521 170.875 150.376 174.507 142.96 174.507C135.141 174.507 130.551 171.027 129.996 165.579H138.471C138.773 167.546 140.488 168.605 143.011 168.605C145.331 168.605 146.895 167.697 146.945 166.184C146.895 164.973 145.836 164.217 143.465 163.712L138.773 162.855C133.376 161.846 130.652 159.122 130.702 154.935C130.652 149.487 135.293 146.258 142.708 146.258C150.073 146.258 154.562 149.638 154.916 155.086H146.996Z"
+                            fill="#2C75F6" />
+                        </svg>
+                      </div>
+                      <div class="bottom__copyright">© 2025 WEAVE. All rights reserved.</div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <footer>
+        <section class="footer__bar cursor-white">
+          <div class="con">
+            <div class="footer__menu">
+              <nav class="menu-box menu-1">
+                <ul>
+                  <li><a href="#"><span>기업 소개</span></a></li>
+                  <li><a href="#"><span>서비스</span></a></li>
+                  <li><a href="#" title="준비중입니다."><span>멤버십</span></a></li>
+                  <li><a href="#" title="준비중입니다."><span>브랜드 아이덴티티</span></a></li>
+                </ul>
+              </nav>
+              <nav class="menu-box menu-2">
+                <ul>
+                  <li><a href="#" target="_blank" title="준비중입니다."><span>Instagram</span></a></li>
+                  <li><a href="#" target="_blank" title="준비중입니다."><span>YouTube</span></a></li>
+                  <li><a href="#" target="_blank" title="준비중입니다."><span>Kakao business </span></a></li>
+                  <li><a href="#" target="_blank" title="준비중입니다."><span>Naver</s pan></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__info-box">
+              <div class="info-num">
+                <span>+82 508 7871(REP)</span>
+                <span>info@weave.co.kr</span>
+              </div>
+              <div class="info-weave">
+                <a href="#">
+                <span>WEAVE</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </div>
+
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/weave-service.css">
+  <script src="./weave-service.js"></script>
+</body>
+
+</html>

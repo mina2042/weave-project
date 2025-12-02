@@ -1,0 +1,326 @@
+:root {
+    /* color */
+    --color-point: #2C75F6;
+    --color-point-2: #82D6FB;
+    --color-white: #fff;
+    --color-gray-1: #fafafa;
+    --color-gray-2: #f5f5f5;
+    --color-gray-3: #eee;
+    --color-gray-4: #e0e0e0;
+    --color-gray-5: #bdbdbd;
+    --color-gray-6: #9e9e9e;
+    --color-gray-7: #757575;
+    --color-gray-8: #616161;
+    --color-gray-9: #424242;
+    --color-gray-10: #212121;
+
+    /* font-size */
+    --font-10: 0.625rem;
+    --font-11: 0.688rem;
+    --font-12: 0.75rem;
+    --font-14: 0.875rem;
+    --font-16: 1rem;
+    --font-18: 1.125rem;
+    --font-20: 1.25rem;
+    --font-22: 1.375rem;
+    --font-24: 1.5rem;
+    --font-26: 1.625rem;
+    --font-28: 1.75rem;
+    --font-30: 1.875rem;
+    --font-32: 2rem;
+    --font-34: 2.125rem;
+    --font-36: 2.25rem;
+    --font-38: 2.375rem;
+    --font-40: 2.5rem;
+    --font-42: 2.625rem;
+    --font-44: 2.75rem;
+    --font-46: 2.875rem;
+    --font-48: 3rem;
+    --font-50: 3.125rem;
+    --font-52: 3.25rem;
+    --font-54: 3.375rem;
+    --font-58: 3.625rem;
+    --font-62: 3.875rem;
+    --font-64: 4rem;
+    --font-68: 4.25rem;
+    --font-72: 4.5rem;
+    --font-74: 4.625rem;
+    --font-78: 4.875rem;
+    --font-82: 5.125rem;
+    --font-84: 5.25rem;
+    --font-88: 5.5rem;
+    --font-92: 5.75rem;
+    --font-94: 5.875rem;
+    --font-98: 5.125rem;
+    --font-100: 6.25rem;
+    --font-150: 9.375rem;
+    --font-200: 12.5rem;
+    --font-250: 15.625rem;
+    --font-300: 18.75;
+    
+    /* font weight */
+    --font-thin-100: 100;
+    --font-extralight-200: 200;
+    --font-light-300: 300;
+    --font-normal-400: 400;
+    --font-medium-500: 500;
+    --font-semibold-600: 600;
+    --font-bold-700: 700;
+    --font-extrabold-800: 800;
+    --font-black-900: 900;
+    
+    /* line height */
+    --line-height-1: 1px;
+    --line-height-125: 1.25px;
+    --line-height-1375: 1.375px;
+    --line-height-15: 1.5px;
+    --line-height-1625: 1.625px;
+    --line-height-2: 2px;
+    --line-height-12: .75rem;
+    --line-height-16: 1rem;
+    --line-height-20: 1.25rem;
+    --line-height-24: 1.5rem;
+    --line-height-28: 1.75rem;
+    --line-height-32: 2rem;
+    --line-height-36: 2.25rem;
+    --line-height-40: 2.5rem;
+
+    /* margin top */
+    --mt-4: 4px;
+    --mt-8: 8px;
+    --mt-10: 10px;
+    --mt-11: 11px;
+    --mt-12: 12px;
+    --mt-13: 13px;
+    --mt-14: 14px;
+    --mt-16: 16px;
+    --mt-20: 20px;
+    --mt-24: 24px;
+    --mt-28: 28px;
+    --mt-32: 32px;
+    --mt-36: 36px;
+    --mt-40: 40px;
+    --mt-44: 44px;
+    --mt-48: 48px;
+    --mt-52: 52px;
+    --mt-56: 56px;
+    --mt-60: 60px;
+    --mt-64: 64px;
+    --mt-100: 100px;
+
+    /* margin left */
+    --ml-4: 4px;
+    --ml-8: 8px;
+    --ml-10: 10px;
+    --ml-11: 11px;
+    --ml-12: 12px;
+    --ml-13: 13px;
+    --ml-14: 14px;
+    --ml-16: 16px;
+    --ml-20: 20px;
+    --ml-24: 24px;
+    --ml-28: 28px;
+    --ml-32: 32px;
+    --ml-36: 36px;
+    --ml-40: 40px;
+    --ml-44: 44px;
+    --ml-48: 48px;
+    --ml-52: 52px;
+    --ml-56: 56px;
+    --ml-60: 60px;
+    --ml-64: 64px;
+
+    /* margin right */
+    --mr-4: 4px;
+    --mr-8: 8px;
+    --mr-10: 10px;
+    --mr-11: 11px;
+    --mr-12: 12px;
+    --mr-13: 13px;
+    --mr-14: 14px;
+    --mr-16: 16px;
+    --mr-20: 20px;
+    --mr-24: 24px;
+    --mr-28: 28px;
+    --mr-32: 32px;
+    --mr-36: 36px;
+    --mr-40: 40px;
+    --mr-44: 44px;
+    --mr-48: 48px;
+    --mr-52: 52px;
+    --mr-56: 56px;
+    --mr-60: 60px;
+    --mr-64: 64px;
+
+    /* margin bottom */
+    --mb-4: 4px;
+    --mb-8: 8px;
+    --mb-10: 10px;
+    --mb-11: 11px;
+    --mb-12: 12px;
+    --mb-13: 13px;
+    --mb-14: 14px;
+    --mb-16: 16px;
+    --mb-20: 20px;
+    --mb-24: 24px;
+    --mb-28: 28px;
+    --mb-32: 32px;
+    --mb-36: 36px;
+    --mb-40: 40px;
+    --mb-44: 44px;
+    --mb-48: 48px;
+    --mb-52: 52px;
+    --mb-56: 56px;
+    --mb-60: 60px;
+    --mb-64: 64px;
+
+    /* padding */
+    --p-4: 4px;
+    --p-8: 8px;
+    --p-10: 10px;
+    --p-11: 11px;
+    --p-12: 12px;
+    --p-13: 13px;
+    --p-14: 14px;
+    --p-16: 16px;
+    --p-20: 20px;
+    --p-24: 24px;
+    --p-28: 28px;
+    --p-32: 32px;
+    --p-36: 36px;
+    --p-40: 40px;
+    --p-44: 44px;
+    --p-48: 48px;
+    --p-52: 52px;
+    --p-56: 56px;
+    --p-60: 60px;
+    --p-64: 64px;
+
+    /* padding x */
+    --px-4: 4px;
+    --px-8: 8px;
+    --px-10: 10px;
+    --px-11: 11px;
+    --px-12: 12px;
+    --px-13: 13px;
+    --px-14: 14px;
+    --px-16: 16px;
+    --px-20: 20px;
+    --px-24: 24px;
+    --px-28: 28px;
+    --px-32: 32px;
+    --px-36: 36px;
+    --px-40: 40px;
+    --px-44: 44px;
+    --px-48: 48px;
+    --px-52: 52px;
+    --px-56: 56px;
+    --px-60: 60px;
+    --px-64: 64px;
+
+    /* padding y */
+    --py-4: 4px;
+    --py-8: 8px;
+    --py-10: 10px;
+    --py-11: 11px;
+    --py-12: 12px;
+    --py-13: 13px;
+    --py-14: 14px;
+    --py-16: 16px;
+    --py-20: 20px;
+    --py-24: 24px;
+    --py-28: 28px;
+    --py-32: 32px;
+    --py-36: 36px;
+    --py-40: 40px;
+    --py-44: 44px;
+    --py-48: 48px;
+    --py-52: 52px;
+    --py-56: 56px;
+    --py-60: 60px;
+    --py-64: 64px;
+
+    /* padding top */
+    --pt-4: 4px;
+    --pt-8: 8px;
+    --pt-10: 10px;
+    --pt-11: 11px;
+    --pt-12: 12px;
+    --pt-13: 13px;
+    --pt-14: 14px;
+    --pt-16: 16px;
+    --pt-20: 20px;
+    --pt-24: 24px;
+    --pt-28: 28px;
+    --pt-32: 32px;
+    --pt-36: 36px;
+    --pt-40: 40px;
+    --pt-44: 44px;
+    --pt-48: 48px;
+    --pt-52: 52px;
+    --pt-56: 56px;
+    --pt-60: 60px;
+    --pt-64: 64px;
+
+    /* padding left */
+    --pl-4: 4px;
+    --pl-8: 8px;
+    --pl-10: 10px;
+    --pl-12: 12px;
+    --pl-16: 16px;
+    --pl-20: 20px;
+    --pl-24: 24px;
+    --pl-28: 28px;
+    --pl-32: 32px;
+    --pl-36: 36px;
+    --pl-40: 40px;
+    --pl-40: 40px;
+    --pl-44: 44px;
+    --pl-48: 48px;
+    --pl-52: 52px;
+    --pl-56: 56px;
+    --pl-60: 60px;
+    --pl-64: 64px;
+
+    /* padding  right */
+    --pr-4: 4px;
+    --pr-8: 8px;
+    --pr-10: 10px;
+    --pr-12: 12px;
+    --pr-16: 16px;
+    --pr-20: 20px;
+    --pr-24: 24px;
+    --pr-28: 28px;
+    --pr-32: 32px;
+    --pr-36: 36px;
+    --pr-40: 40px;
+    --pr-40: 40px;
+    --pr-44: 44px;
+    --pr-48: 48px;
+    --pr-52: 52px;
+    --pr-56: 56px;
+    --pr-60: 60px;
+    --pr-64: 64px;
+
+    /* padding bottom */
+    --pb-4: 4px;
+    --pb-8: 8px;
+    --pb-10: 10px;
+    --pb-11: 11px;
+    --pb-12: 12px;
+    --pb-13: 13px;
+    --pb-14: 14px;
+    --pb-16: 16px;
+    --pb-20: 20px;
+    --pb-24: 24px;
+    --pb-28: 28px;
+    --pb-32: 32px;
+    --pb-36: 36px;
+    --pb-40: 40px;
+    --pb-44: 44px;
+    --pb-48: 48px;
+    --pb-52: 52px;
+    --pb-56: 56px;
+    --pb-60: 60px;
+    --pb-64: 64px;
+}

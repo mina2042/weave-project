@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/weave-login.css">
+  <script src="./weave-login.js"></script>
+
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- 이미지로딩 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- 테일윈드 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.4/tailwind.min.css">
+
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+  <!--AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- 폰트 -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+</head>
+
+<body>
+  <!--폰트-->
+  <style>
+    html,
+    html>body {
+      font-family: 'Pretendard', sans-serif;
+    }
+  </style>
+
+
+  <div id="cursor"></div>
+
+  <div>
+    <header class="top-bar">
+      <div class="con con-top-bar">
+        <div class="top-bar__logo">
+          <a href="./weave-main.html">
+            <span>W</span>
+          </a>
+        </div>
+        <div class="top-bar__menu">
+          <div class="top-bar__menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            </a>
+          </div>
+        </div>
+    </header>
+
+    <div class="sec sec-login">
+      <div class="con con-login">
+        <div class="login-title">
+          <span>LOGIN</span>
+        </div>
+        <form action="" method="POST" class="login-form">
+          <div class="login-input">
+            <div class="login-input__box login-input__id-box">
+              <input type="email" name="username" placeholder="아이디" required />
+            </div>
+            <div class="login-input__box login-input__password-box">
+              <input type="password" name="password" placeholder="비밀번호" required />
+            </div>
+            <div class="login-input__save-find">
+              <div class="id-save">
+                <div class="id-save__checkbox">
+                  <input type="checkbox" name="remember" />
+                  <span></span>
+                </div>
+                <div class="id-save__label">
+                  <span>아이디 저장</span>
+                </div>
+              </div>
+              <div class="id-find">
+                <a href="#" title="준비중입니다."><span>아이디 찾기</span></a>
+                <span>|</span>
+                <a href="#" title="준비중입니다."><span>비밀번호 찾기</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="login-btns">
+            <button type="submit" title="준비중입니다." class="login-btn login-btn-1">로그인</button>
+            <a href="#" target="_blank" title="준비중입니다." class="login-btn login-btn-2">
+              <span>회원가입</span>
+            </a>
+          </div>
+        </form>
+
+        <div class="login-sns">
+          <div class="login-sns__txt">
+            <span class="line"></span>
+            <span>SNS 계정으로 로그인</span>
+            <span class="line"></span>
+          </div>
+          <div class="login-sns__icons">
+            <a href="#" target="_blank" title="준비중입니다." class="naver"><img src="./img/naver.svg" alt="">
+            </a>
+            <a href="#" target="_blank" title="준비중입니다." class="kakao"><img src="./img/kakao.svg" alt="">
+            </a>
+            <a href="#" target="_blank" title="준비중입니다." class="apple"><img src="./img/apple.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-bar">
+      <div class="top-bar side__top-bar">
+        <div class="con con-top-bar side__con-top-bar">
+          <div class="top-bar__logo">
+            <a href="./weave-main.html"><span>W</span></a>
+          </div>
+          <div class="top-bar__login">
+            <a href="./weave-login.html" class="login-btn">
+              <span>LOGIN</span>
+            </a>
+          </div>
+          <div class="top-bar__right">
+            <div class="lang">
+              <ul>
+                <li class="ko"><a href="#" title="준비중입니다.">KO</a></li>
+                <li class="line line-box">
+                  <div class="line"></div>
+                </li>
+                <li class="en"><a href="#" title="준비중입니다.">EN</a></li>
+              </ul>
+            </div>
+            <div class="close-btn-wrap" role="button">
+              <div class="close-btn" id="closeBtn"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec sec-side-bar">
+        <div class="con con-side-bar con-1">
+          <nav class="main-menu">
+            <ul class="main-menu__item-list">
+              <li>
+                <span>01</span><a href="./weave-main.html">기업소개</a>
+              </li>
+              <li>
+                <span>02</span><a href="./weave-service.html">서비스</a>
+              </li>
+              <li>
+                <span>03</span><a href="#" title="준비중입니다.">멤버십</a>
+              </li>
+              <li>
+                <span>04</span><a href="#" title="준비중입니다.">브랜드아이덴티티</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="side-bar__bottom">
+        <div class="con">
+          <div class="bottom-contact">
+            <ul>
+              <li><a href="#" target="_blank" title="준비중입니다.">개인정보처리방침</a></li>
+              <li><span>|</span></li>
+              <li><a href="#" target="_blank" title="준비중입니다.">IR공고</a></li>
+              <li><span>|</span></li>
+              <li><a href="#" target="_blank" title="준비중입니다.">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="bottom-copyright">
+            <span>Copyright © 2025 WEAVE. All rights reserved</span>
+          </div>
+          <div class="bottom-familysite">
+            <div class="familysite__btn-box">
+              <a href="#" title="준비중입니다.">
+                <div class="familysite__btn-txt"><span>FAMILY SITE</span></div>
+                <div><span>∨</span></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
